@@ -9,9 +9,9 @@ A developer make the api of the shop stock management application and they lost 
 3. Update a product
 4. View all products
 5. View a single product
-6. Search for a product by name price or quantity
-7. Sort the products by name price or quantity
-8. Filter the products by price or quantity
+6. Search for a product by name price or quantity (optional)
+7. Sort the products by name price or quantity (optional)
+8. Filter the products by price or quantity (optional)
 
 #### The project is in **React** with **TypeScript** and **Vite**.
 

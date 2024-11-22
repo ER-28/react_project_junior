@@ -98,10 +98,8 @@ interface Product {
 
 ## 💻 Development Workflow
 1. Fork repository
-2. Create feature branch
+2. Create branch with your name
 3. Implement changes
-4. Submit pull request
-5. Address reviews
-6. Merge when approved
-
----
+4. Submit pull request on the original repository
+5. Wait for review and merge
+6. If changes requested, update and resubmit

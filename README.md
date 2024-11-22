@@ -1,74 +1,124 @@
-# Frontend Development Project
+# Stock Management Frontend Project
 
-## The subject 
+## 🌟 Overview
+Modern, user-friendly frontend implementation for a stock management system. This project connects to an existing REST API, focusing on maintainability, type safety, and exceptional user experience.
 
-A developer make the api of the shop stock management application and they lost the frontend you have to make the frontend of the application. The application is a simple stock management application where you can add, delete, update and view the products. The application should have the following features:
+### You can modify the base project to suit your needs. The project is designed to be flexible and scalable.
 
-1. Add a product
-2. Delete a product
-3. Update a product
-4. View all products
-5. View a single product
-6. Search for a product by name price or quantity (optional)
-7. Sort the products by name price or quantity (optional)
-8. Filter the products by price or quantity (optional)
+### If you want add more features, you can do so by following the guidelines below.
 
-#### The project is in **React** with **TypeScript** and **Vite**.
+## 🛠️ Features
 
-You are free for the choice of the rest of the stack.
-**BUT** you have to follow the rules and best practices mentioned below, and use only secure and standard packages.
+### Core Features
+- **Products Management**
+    - Add new products ➕
+    - Remove products ➖
+    - Update product details 🔄
+    - View all products 📋
+    - View single product details 🔍
 
---- 
+### Enhanced Features
+- **Smart Search**
+    - Name-based search
+    - Price-based search
+    - Quantity-based search
 
-**You have a starting point with the project**
+- **Advanced Organization**
+    - Multi-field sorting
+    - Custom filters
+    - Dynamic data views
 
-#### **BUT** you can improve it as you want. And go as far as you want.
+## 🔌 API Integration
+
+### Endpoints
+```typescript
+GET    /products      // List all products
+GET    /products/:id  // Get product details
+POST   /products      // Create product
+PUT    /products/:id  // Update product
+DELETE /products/:id  // Remove product
+```
+
+### Data Contract
+```typescript
+interface Product {
+	id: number;
+	name: string;
+	quantity: number;
+	price: number;
+	created_at: string;
+	updated_at: string;
+}
+```
+
+## ⚙️ Tech Stack
+- React 18+ with TypeScript
+- Vite Build System
+- Modern State Management
+- Type-Safe API Integration
+
+## 📋 Development Standards
+
+### TypeScript Requirements
+- Strict mode enabled
+- No `any` types allowed
+- Interface-first approach
+- Explicit typing
+- Null safety enforced
+
+### React Guidelines
+- Functional components
+- Typed props & events
+- Controlled forms
+- Custom hooks
+- Error boundaries
+- Loading states
+
+### Code Quality
+- Clean code practices
+- Meaningful naming
+- Pure functions
+- Small components
+- Error handling
+- Accessibility
+
+## 🚀 Quick Start
+
+### Setup
+```bash
+# Clone project
+git clone [url]
+cd [project]
+
+# Install dependencies
+npm install
+
+# Start development
+npm run dev
+```
+
+## 🎯 Success Metrics
+- ✅ Complete CRUD functionality
+- 🎨 Clean, intuitive interface
+- 🛡️ Type-safe implementation
+- 📦 Efficient state management
+- ⚡ Optimal performance
+- ♿ Accessibility compliance
+
+## 🔒 Project Rules
+- API compatibility required
+- Error handling mandatory
+- Accessibility standards
+- Clean code practices
+
+## 💻 Development Workflow
+1. Fork repository
+2. Create feature branch
+3. Implement changes
+4. Submit pull request
+5. Address reviews
+6. Merge when approved
 
 ---
 
-## How start working on the project
-
-1. Fork the repository
-2. Clone the repository
-3. Install the dependencies
-4. Start the development server
-5. Start working on the project
-6. Push your changes to your forked repository
-7. Create a pull request to the original repository to a branch with your name
-8. Wait for the review of your code
-9. If everything is ok, your code will be merged to the original repository
-10. If not, you will receive feedback and you have to fix the issues
-11. Repeat the steps 6 to 10 until your code is merged
-12. You can ask for help if you need
-13. You can ask for more features if you want
-
-## The rules
-
-### TypeScript Rules
-1. Strict mode is mandatory - enable all strict flags in tsconfig
-2. No usage of `any` type - always define proper types
-3. No type assertions unless absolutely necessary (avoid `as`)
-4. Use interface for object types instead of type aliases when possible
-5. Enable and follow strict null checks
-6. Define explicit return types for functions
-7. Use discriminated unions for complex state handling
-8. No implicit returns in complex functions
-9. Prefer readonly arrays and properties when data shouldn't be modified
-10. Use enum only for simple, constant values - prefer union types for complex cases
-
-### React Component Rules
-1. Use functional components exclusively
-2. Props interface must be defined for all components
-3. Children prop must be explicitly typed
-4. Event handlers must have proper TypeScript event types
-5. Use controlled components for forms
-6. Implement proper loading and error states
-7. Extract reusable logic into custom hooks
-8. Keep components focused and small (under 100 lines)
-9. Use proper React.memo() optimization only when necessary
-10. Implement proper cleanup in useEffect hooks
-
-### Code Quality Rules
-1. Enforce consistent code formatting
-2. Use meaningful variable and function names
-3. Keep functions pure when possible
+Need help? Create an issue or reach out to the team.

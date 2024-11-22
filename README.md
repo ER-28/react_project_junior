@@ -26,6 +26,22 @@ You are free for the choice of the rest of the stack.
 
 ---
 
+## How start working on the project
+
+1. Fork the repository
+2. Clone the repository
+3. Install the dependencies
+4. Start the development server
+5. Start working on the project
+6. Push your changes to your forked repository
+7. Create a pull request to the original repository to a branch with your name
+8. Wait for the review of your code
+9. If everything is ok, your code will be merged to the original repository
+10. If not, you will receive feedback and you have to fix the issues
+11. Repeat the steps 6 to 10 until your code is merged
+12. You can ask for help if you need
+13. You can ask for more features if you want
+
 ## The rules
 
 ### TypeScript Rules

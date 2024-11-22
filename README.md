@@ -120,5 +120,3 @@ npm run dev
 6. Merge when approved
 
 ---
-
-Need help? Create an issue or reach out to the team.

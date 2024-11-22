@@ -1,4 +1,4 @@
-# Frontend Development Rules & Best Practices
+# Frontend Development Project
 
 ## The subject 
 
